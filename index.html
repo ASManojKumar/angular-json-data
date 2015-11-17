@@ -1,0 +1,15 @@
+<html ng-app="myApp">
+<head>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+   <script src="main.js"></script>
+</head>
+<body ng-controller="resumeData">
+   Name : {{person.firstName}}
+   <br/> Educational Qualification : {{person.educationalQualification}}
+   <br/> Experience : {{person.workingExperience}}
+   <br/> Skills :
+   <span ng-repeat="skill in person.skills">
+      {{skill}},
+   </span>
+</body>
+</html>
